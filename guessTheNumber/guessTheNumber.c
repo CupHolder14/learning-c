@@ -3,10 +3,6 @@
 #include <time.h>
 #include <string.h>
 
-#define LOWER  0 /* lower limit of temperature scale */ 
-#define UPPER  300 /* upper limit */
-#define STEP  20 /* step size */
-
 int startGame();
 
 int main()
