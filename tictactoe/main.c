@@ -132,8 +132,13 @@ int startGame(int* ptrMatchState)
     printf("Select a column\n");
     scanf("%d", &col); /* get column */
 
+    if(row >= 3 || col >= 3) {
+      printf("\n\n(%d, %d) is out of index!\n", row, col);
+      continue;
+    }
     if(boardState[row][col] != ' ') {
-      printf("\nThere is already a symbol there\n");
+      printf("\n\nThere is already a symbol there\n");
+
       continue; /* continue if position is taken */
     }
 
